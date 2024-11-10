@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Homepage</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #a6e22e;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffffff;
+        }
+
+        /* Google Search Bar */
+        .search-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 10px 15px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            background-color: #a6e22e;
+            color: #1a1a1a;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        /* Centered Link Container */
+        .link-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            text-align: left;
+        }
+
+        /* Individual link category */
+        .link-category {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Category title styling */
+        .category-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+
+        /* Link styling */
+        .link {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        /* Link hover effect */
+        .link:hover {
+            color: #a6e22e;
+        }
+
+        /* Icon styling */
+        .link i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="https://www.exploit-db.com" target="_blank">Exploit-DB</a>
+        <a href="https://gtfobins.github.io" target="_blank">GTFOBins</a>
+        <a href="https://www.revshells.com" target="_blank">RevShells</a>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="content">
+        <!-- Google Search Bar -->
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q" placeholder="Search Google...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Link Container -->
+        <div class="link-container">
+            <!-- General Category -->
+            <div class="link-category">
+                <div class="category-title">GENERAL</div>
+                <a href="https://mail.google.com" class="link" target="_blank">
+                    <i class="fas fa-envelope"></i> Mail
+                </a>
+                <a href="https://drive.google.com" class="link" target="_blank">
+                    <i class="fas fa-cloud"></i> Drive
+                </a>
+                <a href="https://linkedin.com" class="link" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://web.whatsapp.com" class="link" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+
+            <!-- Tech Category -->
+            <div class="link-category">
+                <div class="category-title">TECH</div>
+                <a href="https://github.com" class="link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://stackoverflow.com" class="link" target="_blank">
+                    <i class="fab fa-stack-overflow"></i> StackOverflow
+                </a>
+                <a href="https://arstechnica.com" class="link" target="_blank">
+                    <i class="fas fa-microchip"></i> Ars Technica
+                </a>
+            </div>
+
+            <!-- Fun Category -->
+            <div class="link-category">
+                <div class="category-title">FUN</div>
+                <a href="https://youtube.com" class="link" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://netflix.com" class="link" target="_blank">
+                    <i class="fas fa-film"></i> Netflix
+                </a>
+                <a href="https://twitch.tv" class="link" target="_blank">
+                    <i class="fab fa-twitch"></i> Twitch
+                </a>
+            </div>
+
+            <!-- Other Category -->
+            <div class="link-category">
+                <div class="category-title">OTHER</div>
+                <a href="https://reddit.com" class="link" target="_blank">
+                    <i class="fab fa-reddit"></i> Reddit
+                </a>
+                <a href="https://twitter.com" class="link" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://imdb.com" class="link" target="_blank">
+                    <i class="fab fa-imdb"></i> IMDb
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
