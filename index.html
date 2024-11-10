@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Homepage</title>
+    <title>Red Team Homepage</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: #1a1a1a;
+            background: #121212; /* Dark background */
             color: #ffffff;
             font-family: Arial, sans-serif;
             display: flex;
@@ -28,17 +28,24 @@
             right: 20px;
             display: flex;
             gap: 20px;
+            align-items: center;
         }
 
         .navbar a {
-            color: #a6e22e;
+            color: #f44336; /* Red color */
             text-decoration: none;
             font-size: 1.1em;
+            display: flex;
+            align-items: center;
             transition: color 0.3s;
         }
 
         .navbar a:hover {
-            color: #ffffff;
+            color: #ff6666; /* Lighter red on hover */
+        }
+
+        .navbar a i {
+            margin-right: 8px; /* Space between icon and text */
         }
 
         /* Google Search Bar */
@@ -52,8 +59,9 @@
             padding: 10px;
             font-size: 1em;
             border-radius: 5px;
-            border: none;
-            outline: none;
+            border: 1px solid #f44336; /* Red border */
+            background-color: #1a1a1a; /* Dark input background */
+            color: #ffffff;
         }
 
         .search-container button {
@@ -61,8 +69,8 @@
             font-size: 1em;
             border-radius: 5px;
             border: none;
-            background-color: #a6e22e;
-            color: #1a1a1a;
+            background-color: #f44336; /* Red button */
+            color: #ffffff;
             cursor: pointer;
             margin-left: 5px;
         }
@@ -88,7 +96,7 @@
             font-size: 1em;
             font-weight: bold;
             margin-bottom: 15px;
-            color: #cccccc;
+            color: #ff6666; /* Lighter red for category titles */
         }
 
         /* Link styling */
@@ -104,7 +112,7 @@
 
         /* Link hover effect */
         .link:hover {
-            color: #a6e22e;
+            color: #f44336; /* Red hover effect */
         }
 
         /* Icon styling */
@@ -118,9 +126,15 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <a href="https://www.exploit-db.com" target="_blank">Exploit-DB</a>
-        <a href="https://gtfobins.github.io" target="_blank">GTFOBins</a>
-        <a href="https://www.revshells.com" target="_blank">RevShells</a>
+        <a href="https://www.exploit-db.com" target="_blank">
+            <i class="fas fa-exclamation-triangle"></i> Exploit-DB
+        </a>
+        <a href="https://gtfobins.github.io" target="_blank">
+            <i class="fas fa-terminal"></i> GTFOBins
+        </a>
+        <a href="https://www.revshells.com" target="_blank">
+            <i class="fas fa-code"></i> RevShells
+        </a>
     </div>
 
     <!-- Centered Content -->
@@ -198,3 +212,4 @@
 
 </body>
 </html>
+
