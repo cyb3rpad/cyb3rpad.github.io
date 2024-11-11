@@ -3,172 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Team Homepage</title>
+    <title>Go Home</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Basic styling */
-        body, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: #121212; /* Dark background */
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-
-        /* Navbar (left-bottom) styling */
-        .navbar-left {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .navbar-left a {
-            color: #f44336; /* Red color */
-            text-decoration: none;
-            font-size: 1.1em;
-            display: flex;
-            align-items: center;
-            transition: color 0.3s;
-        }
-
-        .navbar-left a:hover {
-            color: #ff6666; /* Lighter red on hover */
-        }
-
-        .navbar-left a i {
-            margin-right: 8px; /* Space between icon and text */
-        }
-
-        /* Navbar (top-right) styling */
-        .navbar-right {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .navbar-right a {
-            color: #f44336; /* Red color */
-            text-decoration: none;
-            font-size: 1.1em;
-            display: flex;
-            align-items: center;
-            transition: color 0.3s;
-        }
-
-        .navbar-right a:hover {
-            color: #ff6666; /* Lighter red on hover */
-        }
-
-        .navbar-right a i {
-            margin-right: 8px; /* Space between icon and text */
-        }
-
-        /* Live Clock Styling */
-        .clock {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #f44336;
-            font-weight: bold;
-        }
-
-        /* Google Search Bar */
-        .search-container {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .search-container input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            font-size: 1em;
-            border-radius: 5px;
-            border: 1px solid #f44336; /* Red border */
-            background-color: #1a1a1a; /* Dark input background */
-            color: #ffffff;
-        }
-
-        .search-container button {
-            padding: 10px 15px;
-            font-size: 1em;
-            border-radius: 5px;
-            border: none;
-            background-color: #f44336; /* Red button */
-            color: #ffffff;
-            cursor: pointer;
-            margin-left: 5px;
-        }
-
-        /* Centered Link Container */
-        .link-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 50px;
-            text-align: left;
-        }
-
-        /* Individual link category */
-        .link-category {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        /* Category title styling */
-        .category-title {
-            font-size: 1em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #ff6666; /* Lighter red for category titles */
-        }
-
-        /* Link styling */
-        .link {
-            display: flex;
-            align-items: center;
-            color: #ffffff;
-            text-decoration: none;
-            margin-bottom: 10px;
-            font-size: 1em;
-            transition: color 0.3s;
-        }
-
-        /* Link hover effect */
-        .link:hover {
-            color: #f44336; /* Red hover effect */
-        }
-
-        /* Icon styling */
-        .link i {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
+    <!-- Google Font: Press Start 2P (Hacker Font) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 
     <!-- Navbar (Top-Right) -->
     <div class="navbar-right">
-        <a href="index.html" target="_self">
+        <a href="/index.html" target="_self">
             <i class="fas fa-home"></i> Home
         </a>
-        <a href="osint.html" target="_self">
+        <a href="/pages/osint.html" target="_self">
             <i class="fas fa-search"></i> OSINT
         </a>
-        <a href="dork.html" target="_self">
+        <a href="/pages/dork.html" target="_self">
             <i class="fas fa-search"></i> Dork
         </a>
     </div>
@@ -201,7 +54,7 @@
 
         <!-- Link Container -->
         <div class="link-container">
-            <!-- General Category -->
+            <!-- Layer 01: General Category -->
             <div class="link-category">
                 <div class="category-title">GENERAL</div>
                 <a href="https://mail.google.com" class="link" target="_blank">
@@ -210,85 +63,68 @@
                 <a href="https://drive.google.com" class="link" target="_blank">
                     <i class="fas fa-cloud"></i> Drive
                 </a>
+                <a href="https://notion.so" class="link" target="_blank">
+                    <i class="fas fa-book"></i> Notion
+                </a>
+                <a href="https://meet.google.com" class="link" target="_blank">
+                    <i class="fas fa-video"></i> Google Meet
+                </a>
+            </div>
+
+            <!-- Layer 01: Social Category -->
+            <div class="link-category">
+                <div class="category-title">SOCIAL</div>
                 <a href="https://linkedin.com" class="link" target="_blank">
                     <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://twitter.com" class="link" target="_blank">
+                    <i class="fab fa-twitter"></i> X
                 </a>
                 <a href="https://web.whatsapp.com" class="link" target="_blank">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
+                <a href="https://reddit.com" class="link" target="_blank">
+                    <i class="fab fa-reddit"></i> Reddit
+                </a>
             </div>
 
-            <!-- Tech Category -->
+            <!-- Layer 01: Code Category -->
             <div class="link-category">
-                <div class="category-title">TECH</div>
+                <div class="category-title">CODE</div>
+                <a href="https://chat.openai.com" class="link" target="_blank">
+                    <i class="fas fa-robot"></i> ChatGPT
+                </a>
                 <a href="https://github.com" class="link" target="_blank">
                     <i class="fab fa-github"></i> GitHub
                 </a>
                 <a href="https://stackoverflow.com" class="link" target="_blank">
                     <i class="fab fa-stack-overflow"></i> StackOverflow
                 </a>
-                <a href="https://arstechnica.com" class="link" target="_blank">
-                    <i class="fas fa-microchip"></i> Ars Technica
+                <a href="https://leetcode.com" class="link" target="_blank">
+                    <i class="fas fa-code"></i> LeetCode
                 </a>
             </div>
 
-            <!-- Fun Category -->
+            <!-- Layer 01: Cyber Category -->
             <div class="link-category">
-                <div class="category-title">FUN</div>
-                <a href="https://youtube.com" class="link" target="_blank">
-                    <i class="fab fa-youtube"></i> YouTube
+                <div class="category-title">CYBER</div>
+                <a href="https://tryhackme.com" class="link" target="_blank">
+                    <i class="fas fa-shield-alt"></i> TryHackMe
                 </a>
-                <a href="https://netflix.com" class="link" target="_blank">
-                    <i class="fas fa-film"></i> Netflix
+                <a href="https://hackthebox.com" class="link" target="_blank">
+                    <i class="fas fa-hacker-news"></i> HackTheBox
                 </a>
-                <a href="https://twitch.tv" class="link" target="_blank">
-                    <i class="fab fa-twitch"></i> Twitch
+                <a href="https://vulnhub.com" class="link" target="_blank">
+                    <i class="fas fa-bug"></i> VulnHub
                 </a>
-            </div>
-
-            <!-- Other Category -->
-            <div class="link-category">
-                <div class="category-title">OTHER</div>
-                <a href="https://reddit.com" class="link" target="_blank">
-                    <i class="fab fa-reddit"></i> Reddit
-                </a>
-                <a href="https://twitter.com" class="link" target="_blank">
-                    <i class="fab fa-twitter"></i> Twitter
-                </a>
-                <a href="https://imdb.com" class="link" target="_blank">
-                    <i class="fab fa-imdb"></i> IMDb
+                <a href="https://letsdefend.io" class="link" target="_blank">
+                    <i class="fas fa-shield-virus"></i> LetsDefend
                 </a>
             </div>
         </div>
     </div>
 
-    <script>
-        // Function to update the clock every second
-        function updateClock() {
-            const clockElement = document.getElementById("clock");
-
-            // Get the current local time
-            const now = new Date();
-            let hours = now.getHours();
-            const minutes = now.getMinutes().toString().padStart(2, "0");
-            const seconds = now.getSeconds().toString().padStart(2, "0");
-
-            // Determine AM or PM
-            const ampm = hours >= 12 ? "PM" : "AM";
-
-            // Convert hours from 24-hour format to 12-hour format
-            hours = hours % 12;
-            hours = hours ? hours : 12; // The hour '0' should be '12'
-            const formattedHours = hours.toString().padStart(2, "0");
-
-            // Format time in 12-hour HH:MM:SS AM/PM
-            clockElement.textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
-        }
-
-        // Update the clock immediately and then every second
-        updateClock();
-        setInterval(updateClock, 1000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
