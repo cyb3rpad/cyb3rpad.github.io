@@ -1,4 +1,4 @@
-# GoBoard
+# Cyberpad
 
 ![image](https://github.com/user-attachments/assets/5e1f4dd0-52ba-46d2-a1d6-5319ea6930ba)
 
