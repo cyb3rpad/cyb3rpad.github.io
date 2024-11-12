@@ -13,6 +13,70 @@ body, html {
     flex-direction: column;
 }
 
+/* Search Container Styling */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-container input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #f44336; /* Red border */
+    background-color: #1a1a1a; /* Dark input background */
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #f44336; /* Red button */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #ff6666; /* Lighter red on hover */
+}
+
+/* Dork Buttons Container */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #f44336; /* Red border */
+    background-color: #1a1a1a; /* Dark button background */
+    color: #f44336;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons-container button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: #ffffff;
+}
+
+/* Live Clock Styling */
+.clock {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f44336;
+    font-weight: bold;
+}
+
 /* Navbar (left-bottom) styling */
 .navbar-left {
     position: absolute;
@@ -65,87 +129,4 @@ body, html {
 
 .navbar-right a i {
     margin-right: 8px; /* Space between icon and text */
-}
-
-/* Live Clock Styling */
-.clock {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #f44336;
-    font-weight: bold;
-}
-
-/* Google Search Bar */
-.search-container {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.search-container input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #f44336; /* Red border */
-    background-color: #1a1a1a; /* Dark input background */
-    color: #ffffff;
-}
-
-.search-container button {
-    padding: 10px 15px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    background-color: #f44336; /* Red button */
-    color: #ffffff;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-/* Centered Link Container (4 categories per row) */
-.link-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    gap: 30px; /* Space between the categories */
-    text-align: left;
-    width: 90%; /* Adjust width to fit the content */
-    max-width: 1200px; /* Max width for better control */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-/* Individual link category */
-.link-category {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* Category title styling */
-.category-title {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ff6666; /* Lighter red for category titles */
-}
-
-/* Link styling */
-.link {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-/* Link hover effect */
-.link:hover {
-    color: #f44336; /* Red hover effect */
-}
-
-/* Icon styling */
-.link i {
-    margin-right: 10px;
-    font-size: 1.2em;
 }
